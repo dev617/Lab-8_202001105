@@ -8,31 +8,29 @@
 
 **1. and 2.** Created a new eclipse project and a class for Boa
 
-![](RackMultipart20230419-1-cfcnnj_html_ed566c94855eb346.png)
+![](Aspose.Words.10b3e1f0-70fc-4bc7-becd-209ca6482dcb.001.jpeg)
 
 **3, 4, 5 and 6.** Different unit tests to test methods isHealthy() and fitsInCage()
 
-![](RackMultipart20230419-1-cfcnnj_html_86a12f7f6a157e15.png)
+![](Aspose.Words.10b3e1f0-70fc-4bc7-becd-209ca6482dcb.002.jpeg)
 
-![](RackMultipart20230419-1-cfcnnj_html_37b386aa8b606a6b.png)
+![](Aspose.Words.10b3e1f0-70fc-4bc7-becd-209ca6482dcb.003.jpeg)
 
-![](RackMultipart20230419-1-cfcnnj_html_41846c0fe8062a6b.png)
+![](Aspose.Words.10b3e1f0-70fc-4bc7-becd-209ca6482dcb.004.jpeg)
 
-![](RackMultipart20230419-1-cfcnnj_html_4a7fa1da9ee7af31.png)
+![](Aspose.Words.10b3e1f0-70fc-4bc7-becd-209ca6482dcb.005.jpeg)
 
 **7. and 8.** Created a new method in lengthInInches() in class Boa and wrote unit tests for this method.
 
-![](RackMultipart20230419-1-cfcnnj_html_de2cdc5cc5e313bf.png)
+![](Aspose.Words.10b3e1f0-70fc-4bc7-becd-209ca6482dcb.006.jpeg)
 
-![](RackMultipart20230419-1-cfcnnj_html_8f22d5ff5a8e4616.png)
+![](Aspose.Words.10b3e1f0-70fc-4bc7-becd-209ca6482dcb.007.jpeg)
 
-![](RackMultipart20230419-1-cfcnnj_html_f28a63571dd6004b.png)
+![](Aspose.Words.10b3e1f0-70fc-4bc7-becd-209ca6482dcb.008.jpeg)
 
-![](RackMultipart20230419-1-cfcnnj_html_950fdc06b1e19335.png)
+![](Aspose.Words.10b3e1f0-70fc-4bc7-becd-209ca6482dcb.009.jpeg)
 
-**Codes:**
-
-**Class Boa:**
+**Codes: Class Boa:**
 
 package tests;
 
@@ -40,9 +38,7 @@ public class Boa {
 
 private String name;
 
-private int length; // the length of the boa, in feet
-
-private String favoriteFood;
+private int length; // the length of the boa, in feet private String favoriteFood;
 
 public Boa (String name, int length, String favoriteFood){
 
@@ -58,25 +54,19 @@ this.favoriteFood = favoriteFood;
 
 public boolean isHealthy(){
 
-return this.favoriteFood.equals("granola bars");
+return this.favoriteFood.equals("granola bars"); }
 
-}
-
-// returns true if the length of this boa constructor is
-
-// less than the given cage length
+// returns true if the length of this boa constructor is // less than the given cage length
 
 public boolean fitsInCage(int cageLength){
 
-return this.length \< cageLength;
+return this.length < cageLength;
 
 }
 
 public int lengthInInches(){
 
-// you need to write the body of this method
-
-int Inch;
+// you need to write the body of this method int Inch;
 
 Inch = 12 \* this.length;
 
@@ -90,9 +80,7 @@ return Inch;
 
 package tests;
 
-import static org.junit.Assert.\*;
-
-import org.junit.Before;
+import static org.junit.Assert.\*; import org.junit.Before;
 
 import org.junit.Test;
 
@@ -114,9 +102,7 @@ ken = new Boa ("Kenneth", 3, "granola bars");
 
 public void testIsHealthy() {
 
-assertFalse(jen.isHealthy()); // Jen favorite food is grapes, so she is not healthy
-
-assertTrue(ken.isHealthy()); // Ken favorite food is granola bars, so he is healthy
+assertFalse(jen.isHealthy()); // Jen favorite food is grapes, so she is not healthy assertTrue(ken.isHealthy()); // Ken favorite food is granola bars, so he is healthy
 
 }
 
@@ -124,9 +110,7 @@ assertTrue(ken.isHealthy()); // Ken favorite food is granola bars, so he is heal
 
 public void testFitsInCage() {
 
-assertFalse(jen.fitsInCage(1)); // Jen is 2 feet long and won't fit in a 1 foot cage
-
-assertTrue(ken.fitsInCage(5)); // Ken is 3 feet long and will fit in a 5 foot cage
+assertFalse(jen.fitsInCage(1)); // Jen is 2 feet long and won't fit in a 1 foot cage assertTrue(ken.fitsInCage(5)); // Ken is 3 feet long and will fit in a 5 foot cage
 
 }
 
@@ -136,8 +120,6 @@ public void testlengthInInches() {
 
 assertEquals(24,jen.lengthInInches());
 
-assertEquals(12,ken.lengthInInches());
-
-}
+assertEquals(12,ken.lengthInInches()); }
 
 }
